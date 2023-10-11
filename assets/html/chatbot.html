@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="chat.css" />
+    <title>Register Page</title>
+  </head>
+
+  <body>
+    <section class="sign_up">
+      <div class="container">
+        <h1><u>Register Now!</u></h1>
+        <section action="/submit" method="POST">
+          <p style="color: white; font-size: 30px; margin-left: 16px;">
+            ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴀᴄᴄᴏᴜɴᴛ. ɪᴛ'ꜱ ꜰʀᴇᴇ ᴀɴᴅ ᴏɴʟʏ ᴛᴀᴋᴇꜱ ᴀ ᴍɪɴᴜᴛᴇ
+          </p>
+          <div class=" name">
+            <input type="text"id="firstName" name="firstName" placeholder="First Name" required />
+            <br>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Last Name"
+              required />
+          </div>
+          <div class="details">
+            <input
+              type="email"
+              id="eMail"
+              name="eMail"
+              placeholder="Email"
+              required />
+            <input type="password" placeholder="Password" required />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Confirm Password"
+              required />
+          </div>
+          <div class="a">
+            <input type="submit" id="register_btn"/>
+          </div>
+        </form>
+    
+      <div class="signIn">
+        <p style="color: rgb(18, 17, 15); margin-left: 40px; font-size: 20px; text-decoration: double;">
+          <b style="color: white;">Already have an account?</b><span><a href="signin" style="text-decoration: none; color: white;"><u>Sign in</u></a></u<>
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
