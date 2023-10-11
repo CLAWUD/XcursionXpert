@@ -4,7 +4,7 @@
     font-family: sans-serif;
 }
     body {
-        background-image: url('boii.jpg');
+        background-image: url('../img/boii.jpg');
         background-size: cover; /* Ensures the image covers the entire viewport */
     }
 

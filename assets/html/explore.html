@@ -13,8 +13,8 @@
     <div class="navbar">
       <div class="navbar-main">
         <h2>XcursionXpert</h2>
-        <a href="test.html">HOME</a>
-        <a href="">LOGIN</a>
+        <a href="/">HOME</a>
+        <a href="/signin">LOGIN</a>
         <a href="">CONTACT US</a>
       </div>
     </div>
@@ -43,13 +43,14 @@
         <div class="col-6">
           <textarea type="text" class="input" id="comment" name="comment" placeholder="Write a comment" v-model="newItem"
             @keyup.enter="addItem()"></textarea>
-          <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
-
+          <button  class='primaryContained float-right' type="submit">Add Comment</button>
+          <div class="commentSection">
 			<ul>
         <% data.forEach(item => { %>
-		<li><%= item.eMail %>:<br><%= item.comment %></li>
+		<li><%= item.eMail %>:<br><h2><%= item.comment %></h2></li>
         <% }); %>
     </ul>
+    </div>
         </div>
       </div>
 	  </form>

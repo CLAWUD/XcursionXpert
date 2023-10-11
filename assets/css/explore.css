@@ -30,7 +30,7 @@ a{
 
 img{
   background-size: cover;
-  height: 614px;
+  height: 500px;
   width: 100%;
   margin-top: 5%;
   position:relative;
@@ -39,7 +39,7 @@ img{
 .imgdiv{
   
   position:absolute;
-  top: 290px;
+  top: 200px;
   left: 177px;
   font-size: 35px ;
    color: rgb(39, 44, 48);
@@ -122,4 +122,14 @@ footer {
   text-align: center;
   padding: 10px;
   color: #ffffff;
+}
+
+.commentSection {
+  background-color: #888888;
+  color:#091922;
+}
+
+main {
+  background-image: url(assets/img/img.jpg);
+  background-size: cover;
 }
