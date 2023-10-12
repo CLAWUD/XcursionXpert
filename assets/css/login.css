@@ -8,10 +8,10 @@ body {
 }
 .overlay p{
 font-size: 25px;
-width: 800px;
+width: 600px;
 }
 .overlay h3{
-  font-size: 50px;
+  font-size: 44px;
 }
 
 .box-form {
@@ -95,7 +95,7 @@ width: 800px;
   overflow: hidden;
 }
 .box-form .right input {
-  width: 700px;
+  
   height: 40px;
   padding: 10px;
   margin-top: 25px;
@@ -135,6 +135,8 @@ background: transparent;
   outline: 0;
   box-shadow: 0px 4px 20px 0px #49c628a6;
   background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%);
+  left: -66px;
+  position: relative;
 }
 .right{
 color: white;
