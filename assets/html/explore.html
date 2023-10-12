@@ -46,7 +46,7 @@
             <textarea type="text" class="input" id="comment" name="comment" placeholder="Write a comment"
               v-model="newItem" @keyup.enter="addItem()"></textarea>
             <button class='primaryContained float-right' type="submit">Add Comment</button>
-            <div class="commentSection">
+            <div class="commentSection" style="width: 614px;">
               <hr>
                 <!-- <% data.forEach(item=> { %>
                   <li>
@@ -61,10 +61,10 @@
 					</div>
 					<% data.forEach(item=> { %>
 					<ul>
-
-                      <i style = "font-size: 50px;" class="fa-solid fa-user"></i> 
-					<li><h4 style="font-size: 40px; padding-left: 80px;"><%= item.eMail %>:</h4>
-						<p style="font-size: 30px; padding-left: 80px;"><%= item.comment %></p></li>
+<div style="display: flex;"><i style = "font-size: 30px; margin-top: 20px; margin-left: 20px;" class="fa-solid fa-user"></i> 
+  <li><h4 style="font-size: 35px; padding-left: 20px;"><%= item.eMail %>:</h4></li></div>
+						<div style="margin-bottom: 35px;"><li><p style="font-size: 30px; padding-left: 80px; margin-bottom: 0; "><%= item.comment %></p></li></div>
+            <hr style="border: 1.5px solid black; width: auto;">
 					<% }); %>
 					</ul>
                   </div>
