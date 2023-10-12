@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: -1px;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
@@ -104,8 +104,10 @@ button.primaryContained:hover {
 	background: #9201A8;
 }
 footer {
-  height: 400px;
+  height: 350px;
   width: 100%;
+position:absolute;
+z-index: 1;
   background-color: #232f2e;
 }
 
@@ -156,9 +158,12 @@ footer {
 
 }
 .com{
-  width: 1000px;
+  width: 613px;
   display: flex;
+  height: 400px;
   flex-wrap: wrap;
+  overflow-y: auto; /* Enable vertical scrolling within the container */
+  border: 1px solid ;
   background-color: #E8E8E8;
- border-radius: 20px;
+
 }
