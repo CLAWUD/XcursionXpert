@@ -4,7 +4,10 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: "Open Sans", sans-serif;
-  color: #333333;
+  color: rgb(128, 179, 255);
+}
+.overlay{
+  background-color: #363062;
 }
 .overlay p{
 font-size: 25px;
@@ -63,13 +66,14 @@ width: 600px;
 .box-form .left .overlay span p {
   margin-top: 50px;
   font-weight: 900;
+  color: #DAFFFB;
 }
 .box-form .left .overlay span a {
   background: #fdfeff;
   color: #241e1e;
   margin-top: 30px;
   padding: 14px 50px;
-  border-radius: 100px;
+  border-radius: 40px;
   display: inline-block;
   box-shadow: 0 3px 6px 1px #042d4657;
 }
@@ -80,6 +84,8 @@ width: 600px;
 .box-form .right {
   padding: 40px;
   overflow: hidden;
+  background-color: rgb(77, 76, 125);
+  border-radius: ;
 }
 @media (max-width: 980px) {
   .box-form .right {
@@ -133,8 +139,8 @@ background: transparent;
   display: inline-block;
   border: 0;
   outline: 0;
-  box-shadow: 0px 4px 20px 0px #49c628a6;
-  background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%);
+  box-shadow: 0px 4px 20px 0px rgb(249, 148, 23);
+  background-image: linear-gradient(135deg, rgb(249, 148, 23)10%, rgb(249, 148, 23) 100%);
   left: -66px;
   position: relative;
 }
@@ -190,4 +196,7 @@ label input[type="checkbox"] {
 }
 .right p{
   font-size: 20px;
+}
+a{
+  color: #DAFFFB;
 }
