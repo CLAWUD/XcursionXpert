@@ -85,7 +85,7 @@ width: 600px;
   padding: 40px;
   overflow: hidden;
   background-color: rgb(77, 76, 125);
-  border-radius: ;
+  border-radius: 40px;
 }
 @media (max-width: 980px) {
   .box-form .right {
