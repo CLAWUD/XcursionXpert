@@ -20,7 +20,7 @@ app.use(session({
 const connection = mysql.createConnection({
 	host: "localhost",
 	user: "root",
-	password: "Megh*2302",
+	password: "Ajinkya*123",
 	database: "chatbot",
 });
 
@@ -41,6 +41,8 @@ app.get("/signup", function (req, res) {
 	res.sendFile(__dirname + "/assets/html/chatbot.html");
 });
 
+let userEmail;
+
 app.post("/submit",function (req, res) {
 	const firstName = req.body.firstName;
 	const lastName = req.body.lastName;
@@ -54,6 +56,7 @@ app.post("/submit",function (req, res) {
 			throw error;
 		} else {
 			req.session.loggedin = true;
+			userEmail = eMail;
 			res.redirect("/");
 		}
 	});
@@ -67,7 +70,7 @@ app.get("/signin", function (req, res) {
 	}
 });
 
-let userEmail;
+;
 
 app.post("/login",function (req, res) {
 	//console.log(req.body);
