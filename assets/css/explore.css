@@ -137,7 +137,7 @@ footer {
 #app{
   height: 1500px;
   width: 100%;
-  background-image: url(/XcursionXpert/assets/img/img.jpg);
+  background-image: url(../img/img.jpg);
   background-size: cover;
 }
 .form{
@@ -151,7 +151,7 @@ footer {
 }
 .profile{
 
-  font-size: 46px;
+  font-size: 60px;
   position: sticky;
 
 }
