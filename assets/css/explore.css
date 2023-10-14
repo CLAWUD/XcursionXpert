@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .buttons {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    margin-right: 10px;
+  }
+  
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  img {
+    margin: 10px;
+    max-width: 200px;
+  }
+  
