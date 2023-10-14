@@ -137,7 +137,7 @@ app.post("/comment",function (req, res) {
 		} else {
 
 
-			res.redirect("/explore");
+			res.redirect("/review");
 		}
 	});
 });
