@@ -117,7 +117,7 @@ app.get("/logout",function (req, res) {
 }*/
 app.get("/explore", function (req, res) {
 	if(req.session.loggedin) {
-		connection.query('SELECT eMail,comment FROM comment', function (error, results){
+		connection.query('SELECT eMail,comment FROM comment ORDER BY commentId DESC', function (error, results){
 			if (error) throw error;
 			res.render(__dirname + "/assets/html/explore.html",{data: results});
 		});
