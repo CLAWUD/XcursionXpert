@@ -115,7 +115,7 @@ app.get("/logout",function (req, res) {
 	});
 	
 }*/
-app.get("/explore", function (req, res) {
+app.get("/review", function (req, res) {
 	if(req.session.loggedin) {
 		connection.query('SELECT eMail,comment FROM comment ORDER BY commentId DESC', function (error, results){
 			if (error) throw error;
@@ -144,6 +144,14 @@ app.post("/comment",function (req, res) {
 
 app.get("/about", function (req, res) {
 	res.render(__dirname + "/assets/html/about.html");
+});
+
+app.get("/explore", function (req, res) {
+	if(req.session.loggedin){
+	res.render(__dirname + "/assets/html/explore.html");
+	} else {
+	res.send(`<script>alert("Please Login first!"); window.location.href="/";</script>`);
+	}
 });
 
 app.use(express.static(__dirname));
