@@ -38,7 +38,7 @@ app.get("/", function (req, res) {
 });
 
 app.get("/signup", function (req, res) {
-	res.sendFile(__dirname + "/assets/html/chatbot.html");
+	res.sendFile(__dirname + "/assets/html/signup.html");
 });
 
 let userEmail;
@@ -119,7 +119,7 @@ app.get("/explore", function (req, res) {
 	if(req.session.loggedin) {
 		connection.query('SELECT eMail,comment FROM comment ORDER BY commentId DESC', function (error, results){
 			if (error) throw error;
-			res.render(__dirname + "/assets/html/explore.html",{data: results});
+			res.render(__dirname + "/assets/html/review.html",{data: results});
 		});
 	} else {
 		res.send(`<script>alert("Please Login first!"); window.location.href="/";</script>`);
